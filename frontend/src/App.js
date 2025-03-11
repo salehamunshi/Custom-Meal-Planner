@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
-import Home from "./components/Home"
+import Home from "./components/Home";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<div>Login Page</div>} />
-        <Route path="/register" element={<div>Registration Page</div>} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
